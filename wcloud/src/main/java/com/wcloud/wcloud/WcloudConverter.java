@@ -9,7 +9,7 @@ public class WcloudConverter { // This class handles the text to data logic
     public static WcloudData ProcessText(String text){
         Map<String,Integer> wordlist = new HashMap<String,Integer>();
 
-        for (String word : text.toLowerCase().replace(".", "").split(" ")) {
+        for (String word : text.toLowerCase().replace(".", "").replace(",", "").split(" ")) {
             if(wordlist.containsKey(word)){
                 wordlist.put(word, wordlist.get(word) + 1);
             }

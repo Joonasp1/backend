@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class WcloudService { //This class will query wordclouds from the database with an identifier
     
     public WcloudData GetData(){
-        return WcloudConverter.ProcessText("This is a test sentence. This should become a wordcloud data object.");
+        return WcloudConverter.ProcessText("This is a test sentence. This should become a wordcloud data object, hopefully.");
     }
 }
