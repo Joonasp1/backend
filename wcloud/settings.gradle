@@ -1,1 +1,4 @@
 rootProject.name = 'wcloud'
+
+include 'wordcloud-angular'
+project(":wordcloud-angular").projectDir = file("../frontend")
